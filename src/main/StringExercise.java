@@ -9,10 +9,13 @@ public class StringExercise {
 //
 //                System.out.print(strgInput);
 //
-//        String strgInput = "Check \"this\" out!, \"s inside of \"s!";
+//       String strgInput = "Check \"this\" out!, \"s inside of \"s!";
 //        System.out.println(strgInput);
 //
+//        String strgInput = "In windows, the main drive is usually C:\\";
+//        System.out.println(strgInput);
 //
+
 //        String strgInput = "I can do backslashes \\, double backslashes \\\\, and the amazing triple backslash \\\\\\!";
 //        System.out.println(strgInput);
 //
