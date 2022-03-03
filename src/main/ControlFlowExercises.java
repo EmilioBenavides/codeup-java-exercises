@@ -10,7 +10,6 @@ public class ControlFlowExercises {
 //        while (i <= 15) {
 //            System.out.print(i + " ");
 //            i++;
-//
 //        }
 //
 //        int i = 0;
@@ -42,11 +41,11 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-        for (int i = 1; i< 100; i++) {
-            if (i% 3 == 0 && i % 5 ==0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 ==0);
-        }
+//        for (int i = 1; i< 100; i++) {
+//            if (i% 3 == 0 && i % 5 ==0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 3 ==0);
+//        }
     }
 
 }
