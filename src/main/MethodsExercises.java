@@ -1,33 +1,54 @@
 package main;
 
+
 import java.util.Scanner;
 
 public class MethodsExercises {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
-        Scanner eb = new Scanner(System.in);
-
-        System.out.println("Addition method sum: " + addMethod(5, 5));
-
-        System.out.println("Subtraction method sum: " + subMethod(5, 4));
-
-        System.out.println("Multiplication method sum: " + multiMethod( 5, 3));
-
-        System.out.println("Division method sum: " + diviMethod(10, 5));
-
-        System.out.println("Modulus method sum: " + modMethod(14, 7));
-
+        System.out.println(addMethod(5, 5));
+        getInteger(2, 9);
     }
 
-    public static int addMethod (int num1, int num2) { return  num1 + num2; }
+    public static int addMethod(int x, int y) {
+        return x + y;
+    }
 
-    public static int subMethod (int num3, int num4) { return num3 - num4; }
+    public static int subMethod(int x, int y) {
+        return x - y;
+    }
 
-    public static int multiMethod (int num5, int num6) { return num5 * num6; }
+    public static int multiMethod(int x, int y) {
+        return x * y;
+    }
 
-    public static int diviMethod ( int num7, int num8) { return num7 / num8; }
+    public static int diviMethod(int x, int y) {
+        if (y == 0) {
+            System.out.println("Can't divide by zeros");
+            return 0;
+        }
+        return x / y;
+    }
 
-    public static int modMethod ( int num9, int num10) { return num9 % num10; }
+    public static int modMethod(int x, int y) {
+        return x % y;
+    }
 
+
+    public static int getInteger(int min, int max) {
+        Scanner eb = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max);
+        int userInput = eb.nextInt();
+
+        // HOW TO PROCEED
+        if (userInput < min || userInput > max) {
+            System.out.println("Number is outside of range");
+            return getInteger(min, max);
+        } else {
+            //  HOW TO STOP
+            System.out.println("Number is within range");
+            return userInput;
+        }
+    }
 }
