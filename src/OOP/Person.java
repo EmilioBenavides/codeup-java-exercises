@@ -30,7 +30,7 @@ public class Person {
 
 //        Person person1 = new Person("John");  // Person1 and Person2 are not the equal to each other because they take up 2 different memory slots
 //        Person person2 = new Person("John");
-//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1.getName().equals(person2.getName())); // the .equals method will compare values not memory addresses
 //        System.out.println(person1 == person2); // this is true because person2 was not previously assigned to anything
 
 //        Person person1 = new Person("John");
