@@ -27,15 +27,15 @@ public class HelloWorld {
         //int myNumber = 123; // this works because it is a solid integer
 
         //double myNumberTwo = 1.1;
-        float myNumberTwo = 1.1f; // this work due to having the f at the end of the value
+      //  float myNumberTwo = 1.1f; // this work due to having the f at the end of the value
 //
 //        int x = 5;
 //        System.out.println(x++); this code block increments after the printout
 //        System.out.println(x);
 
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);// This codeblock increments before printout
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);// This codeblock increments before printout
 
         // class has predefined work used in JAVA
 
@@ -61,12 +61,12 @@ public class HelloWorld {
 //        x /= y;
 //        y -= x;
 
-        byte val = (byte) 128;
-        byte maxByte = Byte.MAX_VALUE;
-        System.out.println(val);
-        System.out.println(maxByte);
-
-
+//        byte val = (byte) 128;
+//        byte maxByte = Byte.MAX_VALUE;
+//        System.out.println(val);
+//        System.out.println(maxByte);
+//
+//
 
 
 

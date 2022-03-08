@@ -2,9 +2,8 @@ package util;
 
 import java.util.Scanner;
 
-public class Input {   // this is an instance variable
-    private Scanner scanner;
-
+public class Input {
+    private Scanner scanner;// this is an instance variable
     public Input() {
         this.scanner = new Scanner(System.in); // We initialized the scanner with new Scanner once the object is created
     }

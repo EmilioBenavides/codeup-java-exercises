@@ -1,2 +1,7 @@
-package shapes;public class Circle {
-}
+package shapes;
+
+public class Circle {
+    private int radius;
+
+    }
+
