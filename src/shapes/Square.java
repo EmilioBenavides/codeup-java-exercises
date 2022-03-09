@@ -1,24 +1,26 @@
 package shapes;
 
-public class Square extends Rectangle{
-    private int side;
+public class Square extends Quadrilateral{
 
-    @Override
-    public int getArea() {
-        return (int)Math.pow(side, 2);
+    public void setLength(double length) {
+        this.length = length;
+        this.width = length;
     }
 
-    @Override
-    public int getPerimeter() {
-        return 4 * side;
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
     }
 
-    public String sayHello(){
-        return "Hello!!";
-    }
-    public Square(int side) {
-        super(side, side); // this is calling the superclass variables
-        this.side = side;
+    public double getPerimeter() {
+        return 4 * width;
     }
 
+    public double getArea() {
+        return length * length;
+    }
+
+    public Square(double side) { // You only have to use one parameter here due because all sides are equal.
+        super(side, side);
+    }
 }

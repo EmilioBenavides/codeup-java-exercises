@@ -67,9 +67,8 @@ public class HelloWorld {
 //        System.out.println(maxByte);
 //
 //
-
-
-
+        System.out.printf("%-4d %3d%n",2,3);
+        System.out.printf("%-4d %-3d",2,3);
 
 
     }

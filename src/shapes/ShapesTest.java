@@ -2,14 +2,14 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(5, 4);
-        System.out.println(box1.getArea());
-        System.out.println(box1.getPerimeter());
+            Measurable myShape;  //When declaring a variable it has the datatype before it
+            myShape = new Rectangle(1.2, 3.4); // This is the instance variable
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
-        Square box2 = new Square(5);
-
-        System.out.println(box2.getPerimeter());
-        System.out.println(box2.getArea());
-        System.out.println(box2.sayHello());
+        myShape = new Square(4);  // This is the instance variable
+        System.out.println(myShape.getArea()); // This is the new Shapes area
+        System.out.println(myShape.getPerimeter()); // This is how you get the new perimeter
+       // System.out.println(myShape.getLength());
     }
 }

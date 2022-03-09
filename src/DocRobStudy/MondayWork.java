@@ -26,6 +26,8 @@ public class MondayWork {
         }
         return "";
     }
+
+
 }
 //Create a Java class called MondayWork.
 //
