@@ -1,14 +1,17 @@
 package main;
 
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class MethodsExercises {
 
     public static void main(String[] args) {
-
-        System.out.println(addMethod(5, 5));
-        getInteger(2, 9);
+//
+//        System.out.println(addMethod(5, 5));
+//        getInteger(2, 9);
+            factorialQuestion(9);
     }
 
     public static int addMethod(int x, int y) {
@@ -51,4 +54,39 @@ public class MethodsExercises {
             return userInput;
         }
     }
-}
+    private static void factorialQuestion(int aNum) {
+        StringBuilder factoralString = new StringBuilder();
+        factoralString.append(aNum + "! = ");
+        long factoral = 1;
+        for (int i = aNum; i >= 1; i--) {
+            factoralString.append(i);
+            if (i != 1) {
+                factoral *= (long) i * (i - 1);
+                factoralString.append(" x ");
+            }
+        }
+        System.out.println(factoralString + " = " + factoral);
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

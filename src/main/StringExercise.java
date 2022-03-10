@@ -1,9 +1,9 @@
 package main;
 
 import java.util.Scanner;
-
-public class StringExercise {
-    public static void main(String[] args) {
+//
+//public class StringExercise {
+//    public static void main(String[] args) {
 //
 //        String  strgInput = "We don't need no education\nWe don't need no thought control";
 //
@@ -21,7 +21,7 @@ public class StringExercise {
 //
 //    }
 //}
-    }
-
-    ;
-}
+//    }
+//
+//    ;
+//}
