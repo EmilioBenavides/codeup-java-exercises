@@ -1,5 +1,8 @@
 package main;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ControlFlowExercises {
@@ -53,8 +56,61 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-        System.out.println("Please enter a number: ");
-        System.out.println("Here is your table!");
+
+        Scanner eb = new Scanner(System.in);
+//
+        boolean userContinue = true;
+//        do {
+//            System.out.println("Please enter a number: ");
+//            int userinput = eb.nextInt();
+//            System.out.println();
+//            System.out.println("Here is your table!");
+//            System.out.println();
+//            System.out.println("Number  |  Squared  |  Cubed");
+//            System.out.println("------ | ------ | ------");
+//            for (int i = 1; i <= userinput; i++) {
+//                System.out.printf("%-6d", i);
+//                System.out.print(" | ");
+//                System.out.printf("%-7d", i * i);
+//                System.out.print(" | ");
+//                System.out.println(i * i * i);
+//            }
+//            System.out.println();
+//            System.out.println("Would you like enter another number? (y/n)");
+//            String userResponse = eb.next();
+//            if (!(userResponse.equalsIgnoreCase("y"))) {
+//                userContinue = false;
+//            }
+//        } while (userContinue);
+//
+//        System.out.println("See you later!");
+//    }
+
+        do {
+            System.out.println("Please enter a numerical grade from 0 to 100.");
+
+            int userInput = eb.nextInt();
+
+            if (userInput >= 88) {
+                System.out.println("A");
+            } else if (userInput >= 80) {
+                System.out.println("B");
+            } else if (userInput >= 67) {
+                System.out.println("C");
+            } else if (userInput >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+
+            System.out.println("Would you like to enter another grade? (y/n)?");
+            String gradeUserInput = eb.next();
+
+            if (!(gradeUserInput.equalsIgnoreCase("y"))) {
+                userContinue = false;
+            }
+
+        } while (userContinue);
 
     }
 
