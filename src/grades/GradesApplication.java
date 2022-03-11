@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class GradesApplication {
         Student Mary = new Student("Mary");
         Student Lucas = new Student("Lucas");
 
-        Karol.addGrades(87);
+        Karol.addGrades(87); // The grades are added to the targeted student. They are now attached to the student object
         Karol.addGrades(98);
         Karol.addGrades(79);
         Justin.addGrades(76);
@@ -27,5 +28,16 @@ public class GradesApplication {
         Lucas.addGrades(99);
         Lucas.addGrades(97);
         Lucas.addGrades(95);
+
+        students.put("KaroltheDestroyer", Karol); // We added the student to the hashmap
+        students.put("JustintoslickforYOU", Justin);
+        students.put("MarysonaMission", Mary);
+        students.put("LucasJavaMaster", Lucas);
+
+        System.out.println(students);
+        Scanner eb = new Scanner(System.in);
+        System.out.println("Which student would you like to see more information about?");
+        String userInput = eb.nextLine();
+
     }
 }

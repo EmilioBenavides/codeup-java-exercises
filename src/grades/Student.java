@@ -3,6 +3,13 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
+    @Override
+    public String toString() { // We override this method so when we "sout" the hashmap "students" we dont get the
+                                // memory address printed out.
+        return studentName; // we return what we want to see in the console. Here we just want to see the name value.
+                            // in the GradesApp page
+    }
+
     //Create a class named Student. It should have private properties for the student's name, and grades. The grades
     // property should be an ArrayList of integers. The student class should have a constructor that sets name property
     // , and initializes the grades property as an empty ArrayList. The Student class should have the following methods:
@@ -11,7 +18,6 @@ public class Student {
         howard.addGrades(87); // .addgrades is how you assign the 87 to the "grade" property.
         howard.addGrades(99);
         System.out.println(howard.getGradeAverage());
-
     }
 
    private String studentName;  // this is how to make the properties private the "data type" must be before the variable name
