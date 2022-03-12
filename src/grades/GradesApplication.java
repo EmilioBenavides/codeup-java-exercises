@@ -1,5 +1,7 @@
 package grades;
 
+import util.Input;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -33,11 +35,41 @@ public class GradesApplication {
         students.put("JustintoslickforYOU", Justin);
         students.put("MarysonaMission", Mary);
         students.put("LucasJavaMaster", Lucas);
+        Input eb = new Input();
 
-        System.out.println(students);
-        Scanner eb = new Scanner(System.in);
-        System.out.println("Which student would you like to see more information about?");
-        String userInput = eb.nextLine();
+        Object[] githubUserNamesList = students.keySet().toArray(); // Here we grab the actual "keys" of the hashmap which are "strings" ie the githubUsernames
+        System.out.println("Welcome! \n" + "Here are the GitHub usernames of our students: ");
 
+        do {
+            for (Object githubUserName : githubUserNamesList) { // The githubUserNamesList is the collection ex. Its holds multiple items
+                // The githubUserName is the single piece of the object
+                System.out.print("|" + githubUserName.toString() + "| "); // Here we are adding the correct spacing and adding the pipes in between the githubUserNames
+
+            }
+            String userInput = eb.getString("\nWhich student would you like to see more information about?");
+            if (students.containsKey(userInput)) {
+                System.out.println(students.get(userInput));
+            } else if (!students.containsKey(userInput)) {
+                System.out.println("Sorry, no student found with the GitHub username of \"" + userInput + "\""); //The while loop
+            }
+        } while (eb.yesNo("\nWould you like to see another student? (y/n)"));
+        System.out.println("Goodbye, have a wonderful day!");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

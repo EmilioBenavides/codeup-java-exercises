@@ -3,10 +3,16 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
+
+    private String studentName;  // this is how to make the properties private the "data type" must be before the variable name
+    private ArrayList<Integer> grades; // This is how you assign the "data type" of the ArrayList. "grades" is the property
+//    Name: Zach - GitHub Username: zgulde
+//    Current Average: 87.4
+
     @Override
     public String toString() { // We override this method so when we "sout" the hashmap "students" we dont get the
                                 // memory address printed out.
-        return studentName; // we return what we want to see in the console. Here we just want to see the name value.
+        return studentName + " :Grade average " + getGradeAverage(); // we return what we want to see in the console. Here we just want to see the name value.
                             // in the GradesApp page
     }
 
@@ -20,8 +26,6 @@ public class Student {
         System.out.println(howard.getGradeAverage());
     }
 
-   private String studentName;  // this is how to make the properties private the "data type" must be before the variable name
-   private ArrayList<Integer> grades; // This is how you assign the "data type" of the ArrayList. "grades" is the property
 
    public Student(String pupilName) { //This is the constructor
        this.studentName = pupilName; // Here we assign the value of "studentName" to "pupilName".
