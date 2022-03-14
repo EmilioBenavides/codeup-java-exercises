@@ -39,8 +39,17 @@ public class Input {
         }
     }
 
+    public int getInt(String prompt) {
+        System.out.println(prompt);
+        int userInput = scanner.nextInt();
+        scanner.nextLine();
+        return userInput;
+    }
+
     public int getInt() {
-        return this.scanner.nextInt();
+        int userInput = scanner.nextInt();
+        scanner.nextLine();
+        return userInput;
     }
 
     public int getInt(int min, int max) {
