@@ -10,7 +10,6 @@ public class Input {
 
     public String getString() {
         return this.scanner.nextLine();
-
     }
 
     public String getString(String prompt) {
@@ -40,16 +39,24 @@ public class Input {
     }
 
     public int getInt(String prompt) {
-        System.out.println(prompt);
-        int userInput = scanner.nextInt();
-        scanner.nextLine();
-        return userInput;
+        try {
+            int userInput = Integer.parseInt(getString(prompt));
+            return userInput;
+        } catch (NumberFormatException e) {
+            System.out.println("You must enter value that is a numerical value");
+            return getInt();
+        }
+
     }
 
     public int getInt() {
-        int userInput = scanner.nextInt();
-        scanner.nextLine();
-        return userInput;
+        try {
+            int userInput = Integer.parseInt(getString());
+            return userInput;
+        } catch (NumberFormatException e) {
+            System.out.println("You must enter a numerical value." + e.getMessage());
+            return getInt();
+        }
     }
 
     public int getInt(int min, int max) {
@@ -81,6 +88,18 @@ public class Input {
             return userInput;
         } else {
             return getDouble(min, max);
+        }
+    }
+
+    public double getDouble(String prompt) {
+        while(true) {
+            try {
+                String myString = getString(prompt);
+                return  Double.valueOf(myString);
+            } catch(NumberFormatException e) {
+                System.out.println("You must enter a value that can be turned into a double.");
+            }
+
         }
     }
 
