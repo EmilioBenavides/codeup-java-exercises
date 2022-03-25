@@ -1,10 +1,10 @@
 package movies;
 
-public class movie {
+public class Movie {
     private String name;
     private String category;
 
-    public movie(String name, String category) {
+    public Movie(String name, String category) {
         this.name = name;
         this.category = category;
     }
@@ -19,6 +19,11 @@ public class movie {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + " Category: " + category;
     }
 
     public void setCategory(String category) {
