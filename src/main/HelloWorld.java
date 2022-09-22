@@ -5,10 +5,15 @@ public class HelloWorld {
        System.out.println("Hello, World!");
         int myFavoriteNumber = 3;
         System.out.println(myFavoriteNumber);
-       String  myString = "This is my favorite number!";
+       String myString = "This is my favorite number!";
 
         System.out.println(myString);
         System.out.println("3");
+
+        double pi = 3.14159;
+        System.out.println("the value of pi is " + pi);
+
+
 
 //       myString = (String)'c'; // can't be used because myString is not a char
 //        myString = 3.14159; // It can't be use because a mysString is a string not a number.
@@ -67,8 +72,8 @@ public class HelloWorld {
 //        System.out.println(maxByte);
 //
 //
-        System.out.printf("%-4d %3d%n",2,3);
-        System.out.printf("%-4d %-3d",2,3);
+//        System.out.printf("%-4d %3d%n",2,3);
+//        System.out.printf("%-4d %-3d",2,3);
 
 
     }

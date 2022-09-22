@@ -15,17 +15,17 @@ public class ConsoleExercises {
 
         //When you enter a non-integer it throws an error
 
-//        System.out.print("Enter 3 words: ");
-//        String word1 = input.next();
-//        String word2 = input.next();
-//        String word3 = input.next();
-//        System.out.printf("You entered: \n%s, \n%s, \n%s\n", word1, word2, word3);
-//
-//        input.nextLine();
-//
-//        System.out.print("enter a sentence: ");
-//        String sentence = input.nextLine();
-//        System.out.printf("You entered: %s\n", sentence);
+        System.out.print("Enter 3 words: ");
+        String word1 = input.next();
+        String word2 = input.next();
+        String word3 = input.next();
+        System.out.printf("You entered: \n%s, \n%s, \n%s\n", word1, word2, word3);
+
+        input.nextLine();
+
+        System.out.print("enter a sentence: ");
+        String sentence = input.nextLine();
+        System.out.printf("You entered: %s\n", sentence);
 
         System.out.print("enter a room length (int): ");
         String lengthString = input.nextLine();

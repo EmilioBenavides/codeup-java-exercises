@@ -14,7 +14,7 @@ public class ControlFlowExercises {
 //            System.out.print(i + " ");
 //            i++;
 //        }
-//
+
 //        int i = 0;
 //        do {
 //            System.out.println(i);
@@ -22,6 +22,13 @@ public class ControlFlowExercises {
 //        } while (i <= 100);
 //    }
 
+//        for(int i = 1; i <= 10; i++) { // <--+
+//            if(i % 2 == 1) { //              |
+//                continue; // ----------------+
+//            }
+//            System.out.println(i);
+//        }
+//
 //        int i = 100;
 //
 //        do {
@@ -29,21 +36,21 @@ public class ControlFlowExercises {
 //            i -= 5;
 //        } while(i >= -10);
 //        }
-
+//
 //        long i = 2L;
 //
 //        do {
 //            System.out.println(i);
 //            i *= i; // We use this to square "i" and reassign the value of "i"
-//        } while (i <1000000L);
+//        } while (i < 1000000L);
 
 //        for (int i = 100; i >= -10; i -= 5) {
 //            System.out.println(i);
 //        }
-//        for (long i = 2L; i < 1000000L; i *= i ) {
+//        for (long i = 2L; i < 1000000L; i *= i) {
 //            System.out.println(i);
 //        }
-
+//
 //        for (int i = 1; i< 100; i++) {
 //            if ((i% 3 == 0) && (i % 5 ==0)) {       // Make sure to always use the most strenuous validations first
 //                System.out.println("FizzBuzz");
@@ -58,7 +65,7 @@ public class ControlFlowExercises {
 
 
         Scanner eb = new Scanner(System.in);
-//
+
         boolean userContinue = true;
         do {
             System.out.println("Please enter a number: ");
@@ -67,11 +74,11 @@ public class ControlFlowExercises {
             System.out.println("Here is your table!");
             System.out.println();
             System.out.println("Number  |  Squared  |  Cubed");
-            System.out.println("------ | ------ | ------");
+            System.out.println("------  | --------  | ------");
             for (int i = 1; i <= userinput; i++) {
-                System.out.printf("%-6d", i);
+                System.out.printf("%-7d", i);
                 System.out.print(" | ");
-                System.out.printf("%-7d", i * i);
+                System.out.printf("%-9d", i * i);
                 System.out.print(" | ");
                 System.out.println(i * i * i);
             }
@@ -85,6 +92,7 @@ public class ControlFlowExercises {
 
         System.out.println("See you later!");
     }
+}
 
 //        do {
 //            System.out.println("Please enter a numerical grade from 0 to 100.");
@@ -111,9 +119,10 @@ public class ControlFlowExercises {
 //            }
 //
 //        } while (userContinue);
-
+//
 //    }
-
-}
-
-
+//
+//    }
+//            }
+//
+//
